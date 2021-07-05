@@ -12,7 +12,7 @@ checkuser()
 {
 if [ $UID -eq 0 ]
 then
-chown $username $directory
+chown -R $username $directory
 else
 echo "You must to be ROOT to run this script"
 fi
