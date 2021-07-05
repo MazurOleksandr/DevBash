@@ -5,7 +5,7 @@ checkdirectory()
 {
 if ! [ -d $directory ]; then
 echo 'No directory'
-exit
+exit -1
 fi
 }
 checkuser()
